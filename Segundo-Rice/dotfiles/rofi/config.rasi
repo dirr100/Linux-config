@@ -1,0 +1,12 @@
+/** Basic config file **/
+
+configuration {
+  show-icons:         true;
+  icon-theme:         "Papirus";
+}
+
+//@theme "/home/daniel/.local/share/rofi/themes/squared-everforest.rasi"
+
+//@theme "/home/daniel/.local/share/rofi/themes/spotlight-dark.rasi"
+
+@theme "/home/daniel/.local/share/rofi/themes/squared-everforest.rasi"
