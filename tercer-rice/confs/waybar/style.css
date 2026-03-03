@@ -1,0 +1,111 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(43, 48, 59, 0.5);
+    border-bottom: 3px solid rgba(100, 114, 125, 0.0);
+    color: white;
+    border-radius: 10px;
+}
+
+tooltip {
+  background: rgba(40, 42, 54, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+  border-radius: 10px;
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces  {
+    padding: 0 5px;
+    background: #282A36;
+    color: white;
+    border-bottom: 3px solid transparent;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+#workspaces .active {
+    background: #64727D;
+    border-bottom: 3px solid white;
+    border-radius: 10px;
+}
+
+#mode, #clock, #battery {
+    padding: 0 10px;
+}
+
+#clock {
+    background-color:#282A36;
+    border-radius: 10px;
+}
+
+#battery {
+    background-color:#282A36;
+    color: white;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+#battery.charging {
+    color: white;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#network {
+    background-color: #282A36;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+}
+
+#pulseaudio {
+    background-color: #282A36;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#pulseaudio.hover {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#tray {
+    padding: 0 5px;
+    margin-right: 5px;
+    background-color: #282A36;
+    border-radius: 10px;
+}
+
+#tray > .passive {
+}
+
+#tray > .urgent {
+    background-color: #282A36;
+}
